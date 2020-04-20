@@ -13,7 +13,7 @@ export function createRouter() {
             {
                 path: "/",
                 name: "Home",
-                component: () => import("@/components/Home.vue")
+                component: () => import("@/views/HomePage.vue")
             },
             {
                 path: "/article",

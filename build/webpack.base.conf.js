@@ -29,7 +29,17 @@ module.exports = {
         }
     },
     module: {
-        rules: [{
+        rules: [
+            {
+							test: /\.css$/,
+							use: [{
+							loader: 'style-loader'
+            }, {
+							loader: 'css-loader'
+							}, {
+							loader: 'sass-loader'
+						}]
+            },{
             test: /\.vue$/,
             loader: 'vue-loader',
             options: vueLoaderConfig
