@@ -4,13 +4,16 @@
     
     </div>
     <article>
-      <div class="img-list">
-      </div>
+      <articleList></articleList>
     </article>
   </div>
 </template>
 <script>
+import articleList  from './components/article-list'
 export default {
+  components: {
+    articleList
+  },
   data(){
     return{}
   }
